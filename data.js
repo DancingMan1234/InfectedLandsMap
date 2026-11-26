@@ -4,7 +4,7 @@
 
 window.MAP_CONFIG = {
   title: "Infected Lands Interactive Map",
-  creator: "LucklessLeaf625",
+  creator: "Discord: @LucklessLeaf625, Roblox: @DancingMan1234",
   version: "1.8.5",
 
   // Your map image (a top-down screenshot/render of your game world).
