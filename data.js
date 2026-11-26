@@ -1,6 +1,5 @@
-// ============================================================
-//  MAP DATA — this is the only file you need to edit regularly
-// ============================================================
+
+//  MAP DATA 
 
 window.MAP_CONFIG = {
   title: "Infected Lands Interactive Map",
@@ -29,29 +28,16 @@ window.MAP_CATEGORIES = [
   { id: "ClothesRacks",  group: "Lootable",       name: "Clothing Rack", icon: "👕", color: "#f59e0b" },
   { id: "HardwareShelves",       group: "Lootable", name: "Hardware Shelves",    icon: "🛠️", color: "#cec54b" },
   { id: "MedicalSupply",    group: "Lootable", name: "Medical Shelves/Crate",    icon: "💊", color: "#da403b" },
+  { id: "GunStore",    group: "Lootable", name: "Gun Store / Gun Store Crates",    icon: "⚔️", color: "#634000" },
 
   { id: "HardwareStore",    group: "POI", name: "Hardware Store",    icon: "🛠️", color: "#cec54b" },
   { id: "MedicalStore",    group: "POI", name: "Medical Store",    icon: "💊", color: "#da403b" },
   { id: "FoodStore",    group: "POI", name: "Food Store",    icon: "🍗", color: "#68c7a2" },
 ]
 
-// x / z are Roblox world positions (studs). `id` must be unique and never change
-// (it's used to remember what players have found).
-window.MAP_MARKERS = [
-  { id: "c1",  type: "chest_common", name: "Riverside Chest",  x: -620, z: -300, desc: "Behind the waterfall." },
-  { id: "c2",  type: "chest_common", name: "Cabin Chest",      x: -200, z:  400, desc: "Inside the abandoned cabin." },
-  { id: "c3",  type: "chest_common", name: "Rooftop Chest",    x:  300, z: -450, desc: "Climb the ladder on the east side." },
-  { id: "r1",  type: "chest_rare",   name: "Cave Chest",       x:  550, z:  200, desc: "Needs the Torch item." },
-  { id: "r2",  type: "chest_rare",   name: "Island Chest",     x: -750, z:  650, desc: "Reachable by boat only." },
-  { id: "l1",  type: "chest_legend", name: "Dragon's Hoard",   x:  100, z:  -50, desc: "Drops after defeating the Dragon.", image: "" },
-  { id: "n1",  type: "npc",          name: "Blacksmith",       x: -100, z: -200, desc: "Upgrade your weapons here." },
-  { id: "n2",  type: "npc",          name: "Merchant",         x:  420, z:  480, desc: "Sells potions." },
-  { id: "t1",  type: "teleporter",   name: "Teleporter A",     x: -500, z:  100, desc: "Links to Teleporter B." },
-  { id: "t2",  type: "teleporter",   name: "Teleporter B",     x:  650, z: -650, desc: "Links to Teleporter A." },
-  { id: "p1",  type: "puzzle",       name: "Rune Door",        x:  250, z:  700, desc: "Match the runes in order: ▲ ● ■" },
-  { id: "b1",  type: "boss",         name: "Dragon",           x:  100, z:  -80, desc: "Level 30. Weak to ice." },
-  { id: "s1",  type: "spawn",        name: "Wolf Pack",        x: -400, z: -650, desc: "Spawns at night." },
+// x / z are Roblox world positions. `id` must be unique and never change
 
+window.MAP_MARKERS = [
   {"id":"GreenCrate_mwx6oiok","type":"GreenCrate","name":"Watchtower","x":454,"z":140,"desc":"On top, on the balcony"},
   {"id":"GreenCrate_mwx6ok5u","type":"GreenCrate","name":"Watchtower","x":611,"z":-245,"desc":"On top, on the balcony"},
   {"id":"GreenCrate_mwx6om6k","type":"GreenCrate","name":"Watchtower","x":-536,"z":-210,"desc":"On top, on the balcony"},
@@ -78,11 +64,16 @@ window.MAP_MARKERS = [
   {"id":"TanCrate_mwx78kj7","type":"TanCrate","name":"Airfield Weapon Crates","x":309,"z":-339,"desc":"5x, 3 in the South Hangar, Two in the West Hangar"},
 
   {"id":"MedicalSupply_mwx7dkys","type":"MedicalSupply","name":"Evac Point MedCase","x":54,"z":-287,"desc":"Behind the Ambulance in the centre"},
-  {"id":"GreenCrate_mwx7ec70","type":"GreenCrate","name":"Evac Point ","x":415,"z":-355,"desc":"Behind the Ambulance in the centre"},
   {"id":"GreenCrate_mwx7f5gh","type":"GreenCrate","name":"Evac Point Army Crate","x":61,"z":-286,"desc":"1x, Centermost Green Tent"},
-  {"id":"TanCrate_mwx7gsq6","type":"TanCrate","name":"Evac Point WeaponCrate","x":306,"z":-330,"desc":"2x, One in South-East green tent, One next to the Helipad"},
+  {"id":"TanCrate_mwy6afr5","type":"TanCrate","name":"Evac Point Weapon Crate","x":70,"z":-286,"desc":"2x, One between helipad and crashed heli, other in the south-eastern Green Tent"},
 
   {"id":"FoodStore_mwx7l20t","type":"FoodStore","name":"Southpoint Food Maket","x":466,"z":-692,"desc":""},
   {"id":"FoodStore_mwx7lwlk","type":"FoodStore","name":"Southpoint Diner","x":481,"z":-692,"desc":""},
 
+  {"id":"GreenCrate_mwy68rzf","type":"GreenCrate","name":"Radio Tower Army Crate","x":-819,"z":245,"desc":"2x, both on the first platform"},
+
+  {"id":"GunStore_mwy6ozoo","type":"GunStore","name":"Pineville Gun store","x":-685,"z":73,"desc":"2x GS Lockers, 8x GS Shelves, 4x GS Displays"},
+
+  {"id":"HardwareStore_mwy6u9tn","type":"HardwareStore","name":"Pineville Hardware Store","x":-682,"z":-10,"desc":"Store is a bit generous, its one shelf. first store next to the humvee"},
+  {"id":"TanCrate_mwy6v0dg","type":"TanCrate","name":"Pineville Humvee Crate","x":-683,"z":-25,"desc":"1x, Hidden behind the humvee next to the diner"},
 ];

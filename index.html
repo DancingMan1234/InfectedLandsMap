@@ -323,9 +323,9 @@
   <script>
   (() => {
 
-    // ===========================================================
-    // 1. SETTINGS (loaded from data.js)
-    // ===========================================================
+   
+    // SETTINGS (loaded from data.js)
+   
     const config     = window.MAP_CONFIG;
     const categories = window.MAP_CATEGORIES;
     const markers    = window.MAP_MARKERS;
@@ -346,13 +346,13 @@
 
     document.title = config.title;
     document.getElementById("title").textContent = config.title;
-    document.getElementById("creator").textContent = config.creator ? "By " + config.creator : "";
+    document.getElementById("creator").textContent = config.creator ? "Creator: " + config.creator : "";
     document.getElementById("version").textContent = config.version ? "Game version " + config.version : "";
 
 
-    // ===========================================================
-    // 2. HELPERS
-    // ===========================================================
+  
+    //  MAP COORDINATE CONVERSIONS
+    
 
     // Game coordinates (studs) -> position on the map image
     function worldToMap(x, z) {
@@ -376,9 +376,9 @@
     }
 
 
-    // ===========================================================
-    // 3. MAP SETUP
-    // ===========================================================
+    
+    // MAP SETUP
+    
     const imageBounds = [[0, 0], [imageHeight, imageWidth]];
 
     const map = L.map("map", {
@@ -403,9 +403,9 @@
     });
 
 
-    // ===========================================================
-    // 4. MARKERS
-    // ===========================================================
+   
+    // MARKERS
+    
     const markerLayer = L.layerGroup().addTo(map);   // markers currently shown
     const leafletMarkers = new Map();                // marker id -> { leafletMarker, data }
 
@@ -481,9 +481,9 @@
     }
 
 
-    // ===========================================================
-    // 5. SIDEBAR (category filter buttons)
-    // ===========================================================
+    
+    // SIDEBAR (category filter buttons)
+    
     const filtersElement = document.getElementById("filters");
     const categoryButtons = {};   // category id -> its button
 
@@ -551,9 +551,9 @@
     map.on("click", () => sidebar.classList.remove("is-open"));
 
 
-    // ===========================================================
-    // 6. SHARE LINKS: index.html#c1 opens marker "c1"
-    // ===========================================================
+    
+    // SHARE LINKS: index.html#c1 opens marker "c1"
+    
     function openMarkerFromAddress() {
       const markerId = location.hash.slice(1);
       const entry = leafletMarkers.get(markerId);
@@ -571,11 +571,11 @@
     window.addEventListener("hashchange", openMarkerFromAddress);
 
 
-    // ===========================================================
-    // 7. EDIT MODE (only runs when the address ends in ?edit=1)
-    //    Click the map -> a marker entry appears in the text box
+    
+    //    EDIT MODE (only runs when the address ends in ?edit=1)
+    //    click the map -> a marker entry appears in the text box
     //    -> copy it into data.js
-    // ===========================================================
+    
     function startEditMode() {
       const panel      = document.getElementById("edit-panel");
       const typeSelect = document.getElementById("edit-type");
@@ -623,9 +623,9 @@
     }
 
 
-    // ===========================================================
-    // 8. START EVERYTHING
-    // ===========================================================
+   
+    //  EXECUTION ORDER:
+    
     buildSidebar();
     createAllMarkers();
     updateVisibleMarkers();
