@@ -273,7 +273,7 @@
 <body>
   <div id="app">
 
-    <!-- ===== Sidebar: search + category filters ===== -->
+    <!-- Sidebar: search + category filters  -->
     <aside id="sidebar">
       <header>
         <h1 id="title">Map</h1>
@@ -290,13 +290,13 @@
       <div id="filters"></div>
     </aside>
 
-    <!-- ===== Map ===== -->
+    <!--  Map  -->
     <div id="map-area">
       <button id="menu-button">☰ Filters</button>
       <div id="map"></div>
       <div id="coords-readout">x: –, z: –</div>
 
-      <!-- Edit mode panel (hidden unless the address ends in ?edit=1) -->
+      <!-- ?edit=1 -->
       <div id="edit-panel">
         <strong>Edit mode</strong>
         <span style="color: var(--text-dim)">— click the map to place a marker</span>
@@ -316,7 +316,7 @@
 
   </div>
 
-  <!-- Leaflet library, then YOUR data (data.js), then the code below -->
+  
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data.js"></script>
 
