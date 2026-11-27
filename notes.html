@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes & Guides</title>
+
+  <style>
+    /* COLORS — same as the map page, change them in both files*/
+    :root {
+      --background: #14171c;
+      --panel:      #1b1f27;
+      --panel-light:#232833;
+      --text:       #e7eaf0;
+      --text-dim:   #8b93a3;
+      --accent:     #5b9dff;
+      --border:     #2d3340;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 15px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    a { color: var(--accent); }
+
+    /* Page width */
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Top bar with the back link */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--panel-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .back-link:hover { border-color: var(--accent); }
+
+    h1 { margin: 0 0 4px; font-size: 28px; }
+    .intro { margin: 0 0 32px; color: var(--text-dim); }
+
+    h2 {
+      margin: 40px 0 12px;
+      padding-bottom: 6px;
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* A boxed card, used for tips and routes */
+    .card {
+      margin-bottom: 14px;
+      padding: 14px 16px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card p  { margin: 0 0 8px; }
+    .card ol, .card ul { margin: 0; padding-left: 22px; }
+
+    .tag {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 1px 8px;
+      font-size: 12px;
+      color: var(--text-dim);
+      background: var(--panel-light);
+      border-radius: 99px;
+      vertical-align: middle;
+    }
+
+       /* Tier list */
+    .tier-list {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .tier-row {
+      display: flex;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+    }
+    .tier-row:last-child { border-bottom: none; }
+
+    .tier-label {
+      flex: none;
+      width: 64px;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      font-weight: 700;
+      color: #14171c;
+    }
+    .tier-s { background: #ff7f7f; }
+    .tier-a { background: #ffbf7f; }
+    .tier-b { background: #ffdf7f; }
+    .tier-c { background: #bfff7f; }
+    .tier-d { background: #7fbfff; }
+
+    .tier-items {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-content: center;
+      min-height: 64px;
+      padding: 10px;
+    }
+
+    .tier-item {
+      padding: 6px 12px;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--panel-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    a.tier-item:hover { border-color: var(--accent); }
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <a class="back-link" href="index.html">← Back to map</a>
+
+    <h1>Notes &amp; Guides</h1>
+    <p class="intro">Tips, loot routes and item info for Infected Lands.</p>
+
+
+    <!-- =====================================================
+         TIPS & TRICKS
+         To add a tip: copy one <div class="card"> block
+         and paste it below the last one.
+         ===================================================== -->
+    <h2>Tips &amp; Tricks</h2>
+
+    <div class="card">
+      <h3>Finding Keycards (Police Armory and Gun Store)</h3>
+      <p>Keep a lookout for the Metal Cabinets, Found in Green Tents and there are lots in Diners around the map. I Have found the keycards very frequently in these.</p>
+    </div>
+
+    <div class="card">
+      <h3>The Crashed Helicopter event isn't worth it.</h3>
+      <p>The Crashed Helicopter event has a long wait time until the crash, spawns lots of zombies in the open. and only has like 3 green crates and ammo boxes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Location (Semi) Specific Weapons</h3>
+      <p>While I don't have the exact loot tables, Items like the Sniper Rifle, Mosin, SKS and Shotguns are more frequently found in the Hunting Store. For SMGS and Pistols (also the MP5-SD) are found frequently in the Police Armory.</p>
+    </div>
+
+    <!-- =====================================================
+         LOOT ROUTES
+         Each route is a card with a numbered list of stops.
+         Stops can link to a marker on the map: use
+         index.html#MARKER_ID  (the id from data.js).
+         ===================================================== -->
+    <h2>Loot Routes</h2>
+
+    <div class="card">
+      <h3>Example: Starter Route <span class="tag">Beginner</span></h3>
+      <p>A safe route for new players. About 10 minutes.</p>
+      <ol>
+        <li><a href="index.html#c1">Riverside Chest</a> — start here</li>
+        <li><a href="index.html#c2">Cabin Chest</a> — then head east</li>
+        <li><a href="index.html#n1">Blacksmith</a> — sell what you found</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Example: High-Risk Route <span class="tag">Advanced</span></h3>
+      <p>Better loot, but expect tougher enemies.</p>
+      <ol>
+        <li>First stop</li>
+        <li>Second stop</li>
+        <li>Final stop</li>
+      </ol>
+    </div>
+
+
+     <!-- =====================================================
+         LOCATION TIER LIST
+         Each row is one tier. To move a location between tiers,
+         cut its line and paste it into another row.
+         To make a location jump to the map, use
+         <a class="tier-item" href="index.html#MARKER_ID">.
+         Otherwise use a plain <span class="tier-item">.
+         ===================================================== -->
+    <h2>Location Tier List</h2>
+    <p class="intro">Locations ranked by loot quality and how worth the trip they are.</p>
+
+    <div class="tier-list">
+
+      <div class="tier-row">
+        <div class="tier-label tier-s">S</div>
+        <div class="tier-items">
+          <a class="tier-item" href="index.html#c1">Example Location 1</a>
+          <span class="tier-item">Example Location 2</span>
+        </div>
+      </div>
+
+      <div class="tier-row">
+        <div class="tier-label tier-a">A</div>
+        <div class="tier-items">
+          <span class="tier-item">Example Location 3</span>
+        </div>
+      </div>
+
+      <div class="tier-row">
+        <div class="tier-label tier-b">B</div>
+        <div class="tier-items">
+          <span class="tier-item">Example Location 4</span>
+          <span class="tier-item">Example Location 5</span>
+        </div>
+      </div>
+
+      <div class="tier-row">
+        <div class="tier-label tier-c">C</div>
+        <div class="tier-items">
+          <span class="tier-item">Example Location 6</span>
+        </div>
+      </div>
+
+      <div class="tier-row">
+        <div class="tier-label tier-d">D</div>
+        <div class="tier-items">
+          <span class="tier-item">Example Location 7</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

@@ -89,6 +89,20 @@
       margin-top: 10px;
     }
 
+    .notes-link {
+      display: block;
+      margin-top: 10px;
+      padding: 8px 10px;
+      text-align: center;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--panel-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .notes-link:hover { border-color: var(--accent); }
+
+
     /* The scrolling list of category filters */
     #filters {
       flex: 1;
@@ -272,6 +286,7 @@
           <button id="show-all">Show all</button>
           <button id="hide-all">Hide all</button>
         </div>
+        <a class="notes-link" href="notes.html">Notes &amp; Guides</a>
       </header>
 
       <!-- Category buttons are added here by the script below -->

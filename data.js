@@ -29,10 +29,12 @@ window.MAP_CATEGORIES = [
   { id: "HardwareShelves",       group: "Lootable", name: "Hardware Shelves",    icon: "🛠️", color: "#cec54b" },
   { id: "MedicalSupply",    group: "Lootable", name: "Medical Shelves/Crate",    icon: "💊", color: "#da403b" },
   { id: "GunStore",    group: "Lootable", name: "Gun Store / Gun Store Crates",    icon: "⚔️", color: "#634000" },
+  { id: "PoliceStation",    group: "Lootable", name: "Police Station / Police Crates",    icon: "🚔", color: "#223c92" },
 
   { id: "HardwareStore",    group: "POI", name: "Hardware Store",    icon: "🛠️", color: "#cec54b" },
-  { id: "MedicalStore",    group: "POI", name: "Medical Store",    icon: "💊", color: "#da403b" },
+  { id: "MedicalStore",    group: "POI", name: "Medical Store",    icon: "🩺", color: "#da403b" },
   { id: "FoodStore",    group: "POI", name: "Food Store",    icon: "🍗", color: "#68c7a2" },
+  { id: "LockedRooms",    group: "POI", name: "Locked Rooms",    icon: "🔒", color: "#13151a" }
 ]
 
 // x / z are Roblox world positions. `id` must be unique and never change
@@ -55,8 +57,11 @@ window.MAP_MARKERS = [
   {"id":"GreenCrate_mwx6tqhx","type":"GreenCrate","name":"Checkpoint Bravo","x":-334,"z":711,"desc":"1x"},
 
 
-  {"id":"HardwareStore_mwx6v4he","type":"HardwareStore","name":"Southpoint Hardware Store","x":591,"z":-691,"desc":"5x Shelves,Nearest building to Fire Station"},
-  {"id":"HardwareStore_mwx6vpcw","type":"HardwareStore","name":"Shopping Centre Hardware Store","x":-74,"z":574,"desc":"Middle Building"},
+  {"id":"HardwareStore_mwx6v4he","type":"HardwareStore","name":"Southpoint Hardware Store","x":591,"z":-691,"desc":"5x Shelves, Nearest building to Fire Station"},
+  {"id":"MedicalStore_mwyvhfgo","type":"MedicalStore","name":"Shopping Centre Medical Store","x":-93,"z":574,"desc":"8x Medical Shelves, Second Store from the left."},
+  {"id":"FoodStore_mwyvmogz","type":"FoodStore","name":"Shopping Centre Food Store","x":-64,"z":583,"desc":"First Building on the Right"},
+
+  {"id":"HardwareStore_mwx6vpcw","type":"HardwareStore","name":"Shopping Centre Hardware Store","x":-74,"z":574,"desc":"4x Hardware Shelves, Second from the right"},
   {"id":"GunStore_mwy7tiiq","type":"GunStore","name":"Southpoint Gun Store","x":553,"z":-680,"desc":"8x GS Shelves, 3x GS Displays, 3x Weapon Crates"},
 
   {"id":"MedicalStore_mwx70ygz","type":"MedicalStore","name":"Southpoint Pharmacy","x":569,"z":-668,"desc":"Pharmacy next to the Police Station"},
@@ -81,4 +86,10 @@ window.MAP_MARKERS = [
   {"id":"MedicalSupply_mwygyoq4","type":"MedicalSupply","name":"Hospital","x":-60,"z":49,"desc":"17x 2 per room upstairs, 5 downstairs"},
   {"id":"MedicalStore_mwygz794","type":"MedicalStore","name":"Hospital","x":-70,"z":52,"desc":"Filled with Medical Crates"},
   {"id":"GreenCrate_mwyu1c4a","type":"GreenCrate","name":"Louisville Park Army Crate","x":115,"z":177,"desc":"1x, inside the centre green tent"},
+  {"id":"GreenCrate_mwyva8td","type":"GreenCrate","name":"Crashed Plane Army Crate","x":-429,"z":100,"desc":"2x, One towards the back of the plane in the grass, one underneath the sunshade."},
+
+  {"id":"HardwareStore_mwyuc00r","type":"HardwareStore","name":"Louisville Corner Hardware Store","x":90,"z":144,"desc":"15x Hardware shelves, Last building in the line "},
+  {"id":"LockedRooms_mwyusi9p","type":"LockedRooms","name":"Louisville Police Station Armory","x":60,"z":178,"desc":"Requires Police Keycard. 5x Police Chests, 4x Police Lockers, 3x Blue Lockers, 3x Weapon Crates, 5x Ammo Crates, 1x Medical Crate"},
+  {"id":"GunStore_mwyvrsqj","type":"GunStore","name":"Mayfield Gun Store","x":427,"z":670,"desc":"14x GS Shelves"},
+  {"id":"LockedRooms_mwyvsss4","type":"LockedRooms","name":"Mayfield Gun Store Locked Room","x":412,"z":670,"desc":"5x GS Displays, 3x GS Shelves, 1x GS Locker"},
 ];
