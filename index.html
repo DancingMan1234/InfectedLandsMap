@@ -9,9 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
   <style>
-    /* =========================================================
-       COLORS — change these to restyle the whole site
-       ========================================================= */
+    /* COLORS restyle the whole site */
     :root {
       --background: #14171c;
       --panel:      #1b1f27;
@@ -22,9 +20,7 @@
       --border:     #2d3340;
     }
 
-    /* =========================================================
-       PAGE LAYOUT: sidebar on the left, map on the right
-       ========================================================= */
+    /* PAGE LAYOUT: sidebar on the left, map on the right */
     * { box-sizing: border-box; }
 
     html, body {
@@ -48,9 +44,7 @@
     }
     button:hover { border-color: var(--accent); }
 
-    /* =========================================================
-       SIDEBAR
-       ========================================================= */
+    /* SIDEBAR */
     #sidebar {
       width: 320px;
       flex: none;
@@ -140,9 +134,7 @@
     .category-name  { flex: 1; }
     .category-count { color: var(--text-dim); font-size: 12px; }
 
-    /* =========================================================
-       MAP AREA
-       ========================================================= */
+    /* MAP AREA*/
     #map-area {
       flex: 1;
       position: relative;
@@ -218,9 +210,7 @@
       z-index: 1100;
     }
 
-    /* =========================================================
-       EDIT MODE PANEL (only shown with ?edit=1 in the address)
-       ========================================================= */
+    /* EDIT MODE PANEL (only shown with ?edit=1 in the address) */
     #edit-panel {
       display: none;
       position: absolute;
@@ -253,9 +243,7 @@
       font-size: 12px;
     }
 
-    /* =========================================================
-       PHONE LAYOUT: sidebar slides in over the map
-       ========================================================= */
+    /* PHONE LAYOUT: sidebar slides in over the map */
     @media (max-width: 760px) {
       #sidebar {
         position: absolute;

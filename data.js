@@ -78,4 +78,7 @@ window.MAP_MARKERS = [
   {"id":"HardwareStore_mwy6u9tn","type":"HardwareStore","name":"Pineville Hardware Store","x":-682,"z":-10,"desc":"Store is a bit generous, its one shelf. first store next to the humvee"},
   {"id":"TanCrate_mwy6v0dg","type":"TanCrate","name":"Pineville Humvee Crate","x":-683,"z":-25,"desc":"1x, Hidden behind the humvee next to the diner"},
   {"id":"FoodStore_mwy78rsf","type":"FoodStore","name":"Pineville Diner","x":-675,"z":-28,"desc":"Full Diner, Gas station next door for a little bit more food"},
+  {"id":"MedicalSupply_mwygyoq4","type":"MedicalSupply","name":"Hospital","x":-60,"z":49,"desc":"17x 2 per room upstairs, 5 downstairs"},
+  {"id":"MedicalStore_mwygz794","type":"MedicalStore","name":"Hospital","x":-70,"z":52,"desc":"Filled with Medical Crates"},
+  {"id":"GreenCrate_mwyu1c4a","type":"GreenCrate","name":"Louisville Park Army Crate","x":115,"z":177,"desc":"1x, inside the centre green tent"},
 ];
