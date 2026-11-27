@@ -2,7 +2,7 @@
 //  MAP DATA 
 
 window.MAP_CONFIG = {
-  title: "Infected Lands Interactive Map",
+  title: "Infected Lands Interactive Map FOR FM 😈",
   creator: "Discord: @LucklessLeaf625, Roblox: @DancingMan1234",
   version: "1.8.5",
 
@@ -55,8 +55,9 @@ window.MAP_MARKERS = [
   {"id":"GreenCrate_mwx6tqhx","type":"GreenCrate","name":"Checkpoint Bravo","x":-334,"z":711,"desc":"1x"},
 
 
-  {"id":"HardwareStore_mwx6v4he","type":"HardwareStore","name":"Southpoint Hardware Store","x":591,"z":-691,"desc":"Nearest building to Fire Station"},
+  {"id":"HardwareStore_mwx6v4he","type":"HardwareStore","name":"Southpoint Hardware Store","x":591,"z":-691,"desc":"5x Shelves,Nearest building to Fire Station"},
   {"id":"HardwareStore_mwx6vpcw","type":"HardwareStore","name":"Shopping Centre Hardware Store","x":-74,"z":574,"desc":"Middle Building"},
+  {"id":"GunStore_mwy7tiiq","type":"GunStore","name":"Southpoint Gun Store","x":553,"z":-680,"desc":"8x GS Shelves, 3x GS Displays, 3x Weapon Crates"},
 
   {"id":"MedicalStore_mwx70ygz","type":"MedicalStore","name":"Southpoint Pharmacy","x":569,"z":-668,"desc":"Pharmacy next to the Police Station"},
 
@@ -76,4 +77,5 @@ window.MAP_MARKERS = [
 
   {"id":"HardwareStore_mwy6u9tn","type":"HardwareStore","name":"Pineville Hardware Store","x":-682,"z":-10,"desc":"Store is a bit generous, its one shelf. first store next to the humvee"},
   {"id":"TanCrate_mwy6v0dg","type":"TanCrate","name":"Pineville Humvee Crate","x":-683,"z":-25,"desc":"1x, Hidden behind the humvee next to the diner"},
+  {"id":"FoodStore_mwy78rsf","type":"FoodStore","name":"Pineville Diner","x":-675,"z":-28,"desc":"Full Diner, Gas station next door for a little bit more food"},
 ];
